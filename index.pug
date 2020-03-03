@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Form validation
+    link(rel="stylesheet", href="index.css")
+  body
+
+  header
+    h1 Form validation 
+
+  form#register
+    .input-group
+      label(for="firstname")
+      input(type="text", name="firstname")#firstname
+      p Entrez votre prénom s'il vous plait
+    .input-group
+      label(for="surname")
+      input(type="text", name="surname")#surname
+      p Entrez votre pseudo s'il vous plait
+    .input-group
+      label(for="email")
+      input(type="text", name="email")#email
+      p Entrez votre email s'il vous plait
+    .input-group
+      label(for="password")
+      input(type="password", name="password")#password
+      p Minimum 8 caractères, au moins 1 lettre majuscule, 1 lettre minuscule et 1 chiffre
+    .input-group.full
+      input(type="submit", value="Envoyer").submit-btn
+      .clear
+    .errors
+  
+  script(src="index.js")

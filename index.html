@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body></body>
+  <header>
+    <h1>Form validation </h1>
+  </header>
+  <form id="register">
+    <div class="input-group">
+      <label for="firstname"></label>
+      <input type="text" name="firstname" id="firstname"/>
+      <p>Entrez votre prénom s'il vous plait</p>
+    </div>
+    <div class="input-group">
+      <label for="surname"></label>
+      <input type="text" name="surname" id="surname"/>
+      <p>Entrez votre pseudo s'il vous plait</p>
+    </div>
+    <div class="input-group">
+      <label for="email"></label>
+      <input type="text" name="email" id="email"/>
+      <p>Entrez votre email s'il vous plait</p>
+    </div>
+    <div class="input-group">
+      <label for="password"></label>
+      <input type="password" name="password" id="password"/>
+      <p>Minimum 8 caractères, au moins 1 lettre majuscule, 1 lettre minuscule et 1 chiffre</p>
+    </div>
+    <div class="input-group full">
+      <input class="submit-btn" type="submit" value="Envoyer"/>
+      <div class="clear"></div>
+    </div>
+    <div class="errors"></div>
+  </form>
+  <script src="index.js"></script>
+</html>

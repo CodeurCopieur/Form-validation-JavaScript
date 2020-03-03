@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'circular std', sans-serif; }
+
+header {
+  padding: 20px 15px;
+  background-color: #081826; }
+  header h1 {
+    font-size: 28px;
+    font-weight: 200;
+    text-align: center;
+    color: #fff; }
+
+form#register {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 15px; }
+  form#register .input-group {
+    width: auto;
+    min-width: 200px;
+    overflow: hidden; }
+    form#register .input-group.full {
+      width: 100%; }
+    form#register .input-group .clear {
+      clear: both; }
+    form#register .input-group label, form#register .input-group input {
+      display: block;
+      width: 100%; }
+    form#register .input-group label {
+      margin-bottom: 5px;
+      color: #081826;
+      font-size: 14px; }
+    form#register .input-group input {
+      padding: 10px 3px;
+      border: 1px solid #081826;
+      outline: none;
+      margin: 30px 0px 10px;
+      position: relative;
+      -webkit-transition: all 480ms;
+      -o-transition: all 480ms;
+      transition: all 480ms; }
+      form#register .input-group input:focus {
+        border: 1px solid #F2BB16; }
+      form#register .input-group input.error {
+        border: 1px solid #FF0000; }
+      form#register .input-group input.submit-btn {
+        width: 100%;
+        border: 1px solid #fff;
+        outline: none;
+        background: none;
+        background-color: #081826;
+        font-size: 18px;
+        font-weight: 700;
+        color: #FFF;
+        padding: 15px 25px;
+        cursor: pointer;
+        -webkit-transition: all 480ms;
+        -o-transition: all 480ms;
+        transition: all 480ms; }
+        form#register .input-group input.submit-btn:hover {
+          background-color: #fff;
+          color: #081826;
+          border: 1px solid #081826; }
+    form#register .input-group p {
+      color: #081826;
+      font-size: 12px; }
+  form#register .errors {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 15px;
+    cursor: pointer; }
+    form#register .errors .error {
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #F20519;
+      color: #FFF;
+      font-size: 14px;
+      -webkit-transform: translateY(300px);
+      -ms-transform: translateY(300px);
+      transform: translateY(300px);
+      pointer-events: all;
+      margin-bottom: 10px;
+      -webkit-animation: slide-in 1s ease-out forwards;
+      animation: slide-in 1s ease-out forwards; }
+
+@-webkit-keyframes slide-in {
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+
+@keyframes slide-in {
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
